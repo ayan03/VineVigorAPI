@@ -84,8 +84,9 @@ def test():
                 break
         cv2.destroyAllWindows()
         """
-        #ret_img = base64.b64encode(originalCrop).decode("utf-8")
-        ret_img = base64.b64encode(decoded_image).decode("utf-8")
+
+        # Something wrong with originalCrop, unable to convert to photo in the mobile app
+        ret_img = base64.b64encode(originalCrop).decode("utf-8")
 
         body = {
             'POST' : 'POST data',
